@@ -2,6 +2,7 @@
 
 ## Overview
 
+<<<<<<< HEAD
 This repository contains a comprehensive Electric Vehicle (EV) Analytics Dashboard built with React and Chart.js. The dashboard analyzes the provided Electric Vehicle population data from Washington State and presents key insights through interactive visualizations.
 
 **🚀 Live Dashboard:** [Your Deployment URL Here]
