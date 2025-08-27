@@ -184,7 +184,21 @@ MIT License - Created for MapUp Assessment
 ---
 
 **Built with ❤️ using React, Chart.js, and modern web technologies**
+# Analytics Dashboard Assessment
+
+**Live Dashboard:** [EV Analytics Dashboard – Washington State](https://analytics-dashboard-assessment-liart-chi.vercel.app/)
+
+---
+
+## Instructions Completed
+
+- Analysis & frontend dashboard implemented
+- Dashboard deployed via Vercel
+- Repository forked and updated
+
 =======
+
+
 The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
 
 ### We encourage the use of AI and LLM tools for this assessment! However, you must understand what you're building and be able to explain your implementation decisions.
