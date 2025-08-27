@@ -3,6 +3,9 @@ import Papa from 'papaparse';
 export const loadCSVData = async (csvPath) => {
   try {
     const response = await fetch(csvPath);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const csvText = await response.text();
     
     const result = Papa.parse(csvText, {

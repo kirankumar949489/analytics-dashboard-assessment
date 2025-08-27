@@ -37,7 +37,7 @@ function App() {
     const loadData = async () => {
       try {
         setLoading(true);
-        const rawData = await loadCSVData('./data-to-visualize/Electric_Vehicle_Population_Data.csv');
+        const rawData = await loadCSVData('/data-to-visualize/Electric_Vehicle_Population_Data.csv');
         const processedData = processEVData(rawData);
         setData(processedData);
       } catch (err) {
