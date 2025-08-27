@@ -12,7 +12,9 @@ import {
   LineElement,
 } from 'chart.js';
 import { Bar, Doughnut, Line } from 'react-chartjs-2';
-import { loadCSVData, processEVData } from './utils/dataProcessor';
+import { processEVData } from './utils/dataProcessor';
+import csvData from '../public/data-to-visualize/Electric_Vehicle_Population_Data.csv?raw';
+import Papa from 'papaparse';
 import StatCard from './components/StatCard';
 import ChartCard from './components/ChartCard';
 
@@ -37,7 +39,11 @@ function App() {
     const loadData = async () => {
       try {
         setLoading(true);
-        const rawData = await loadCSVData('/data-to-visualize/Electric_Vehicle_Population_Data.csv');
+        const rawData = Papa.parse(csvData, {
+          header: true,
+          skipEmptyLines: true,
+          transformHeader: (header) => header.trim()
+        }).data;
         const processedData = processEVData(rawData);
         setData(processedData);
       } catch (err) {
